@@ -1,0 +1,12 @@
+file = collection of single type of data 
+folder = collection of filess
+
+Frontend
+Html = Skelton
+
+web start
+1959
+
+1.0 = only text
+2.0 = text, images, audio, video
+3.0 = AR, VR, Blockchain
