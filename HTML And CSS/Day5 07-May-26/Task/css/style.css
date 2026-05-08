@@ -1,4 +1,3 @@
-/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
@@ -7,29 +6,20 @@
 
 body {
   background-color: #f5f4ef;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   color: #2c2c2c;
   min-height: 100vh;
 }
-
-/* ===========================
-   HEADER
-=========================== */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 22px 50px;
   background-color: #f5f4ef;
-  background-color: red;
 }
 
-.logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 52px;
-  font-weight: 700;
-  color: #2c2c2c;
-  letter-spacing: -0.5px;
+.logo img{
+  height: 120px;
 }
 
 nav ul {
@@ -55,7 +45,6 @@ nav ul li a:hover {
   padding-bottom: 4px;
 }
 
-
 .header-right {
   display: flex;
   align-items: center;
@@ -68,7 +57,6 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-/* Cart badge — position: absolute on top of cart icon */
 .cart-wrap {
   position: relative;
   display: inline-block;
@@ -88,19 +76,14 @@ nav ul li a:hover {
   line-height: 17px;
   font-weight: 500;
 }
-
-/* ===========================
-   MAIN LAYOUT  
-   3 columns using inline-block
-=========================== */
+/* Main */
 main {
   padding: 10px 50px 30px;
-
 }
 
 .wrapper {
-  white-space: nowrap; /* keeps inline-block children on one line */
-    display: flex;
+  white-space: nowrap;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -110,18 +93,22 @@ main {
 .col-right {
   display: inline-block;
   vertical-align: center;
-  white-space: normal; /* reset inside each column */
+  white-space: normal;
 }
 
-.col-left  { width: 28%; padding-right: 30px; }
-.col-center { width: 30%; }
-.col-right  { width: 13%; padding-left: 15px; }
+.col-left {
+  width: 28%;
+  padding-right: 30px;
+}
+.col-center {
+  width: 30%;
+}
+.col-right {
+  width: 8%;
+  padding-left: 15px;
+}
 
-/* ===========================
-   LEFT COLUMN
-=========================== */
-
-/* New Collection */
+/* Left Column */
 .new-collection {
   display: inline-flex;
   align-items: center;
@@ -141,9 +128,8 @@ main {
   color: #5a5a5a;
 }
 
-/* Product Title */
 .product-title {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 80px;
   font-weight: 600;
   line-height: 1.05;
@@ -165,7 +151,6 @@ main {
   margin-bottom: 22px;
 }
 
-/* Colors */
 .colors-row {
   margin-bottom: 22px;
 }
@@ -187,11 +172,16 @@ main {
   cursor: pointer;
 }
 
-.dot-green { background-color: #4a5240; }
-.dot-beige { background-color: #d6c9b8; }
-.dot-pink  { background-color: #d4899a; }
+.dot-green {
+  background-color: #4a5240;
+}
+.dot-beige {
+  background-color: #d6c9b8;
+}
+.dot-pink {
+  background-color: #d4899a;
+}
 
-/* Details */
 .details-heading {
   display: inline-flex;
   align-items: center;
@@ -202,7 +192,7 @@ main {
 .details-heading h3 {
   font-size: 20px;
   font-weight: 500;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .details-line {
@@ -220,7 +210,6 @@ main {
   margin-bottom: 24px;
 }
 
-/* Feature icons bottom */
 .feature-icons {
   display: inline-flex;
   align-items: flex-start;
@@ -266,9 +255,7 @@ main {
   margin-top: 5px;
 }
 
-/* ===========================
-   CENTER COLUMN
-=========================== */
+/* Center Column */
 .image-area {
   display: inline-flex;
   align-items: stretch;
@@ -287,7 +274,6 @@ main {
   left: 10px;
 }
 
-
 .vertical-divider {
   width: 4px;
   height: 60px;
@@ -305,9 +291,8 @@ main {
   text-transform: lowercase;
 }
 
-/* ===== IMAGE CONTAINER — position: relative ===== */
 .image-container {
-  position: relative;   /* <-- parent */
+  position: relative;
   flex: 1;
   border-radius: 18px;
   overflow: hidden;
@@ -322,24 +307,21 @@ main {
   display: block;
 }
 
-/* ===== ABSOLUTE BADGES ===== */
 .badge {
-  position: absolute;  /* <-- absolute child */
+  position: absolute;
   background-color: #fff;
   border-radius: 50px;
   padding: 10px 20px;
   font-size: 14px;
   font-weight: 500;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
-/* Price — top left */
 .price-badge {
   top: 18px;
   left: 18px;
 }
 
-/* Rating — top right */
 .rating-badge {
   top: 18px;
   right: 18px;
@@ -353,9 +335,8 @@ main {
   color: #f4a72c;
 }
 
-/* Add to bag — bottom right, position: absolute */
 .add-to-bag {
-  position: absolute;   /* <-- absolute child */
+  position: absolute;
   bottom: 22px;
   right: 22px;
   width: 110px;
@@ -385,9 +366,7 @@ main {
   background-color: #3a4230;
 }
 
-/* ===========================
-   BOTTOM BAR
-=========================== */
+/* Bottom Bar */
 .bottom-bar {
   background-color: #eeeee8;
   border-radius: 14px;
@@ -402,6 +381,11 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 12px;
+}
+
+.bottom-item-left-b {
+  border-left: 1px solid #c9c9c9;
+  padding-left: 10px;
 }
 
 .bottom-item i {
@@ -420,9 +404,7 @@ main {
   color: #777;
 }
 
-/* ===========================
-   RIGHT COLUMN — Thumbnails
-=========================== */
+/* Right thumb */
 .thumb {
   width: 100%;
   height: 130px;

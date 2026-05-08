@@ -3,18 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Loomé - A Cotton Weave</title>
+    <title>Task 2 Css</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-
     <header>
-      <div class="logo">loomé.</div>
+      <div class="logo">
+        <img src="images/logo.png" alt="loome brnand" />
+      </div>
 
       <nav>
         <ul>
@@ -35,19 +39,16 @@
       </div>
     </header>
 
-    <!-- ===== MAIN ===== -->
     <main>
       <section class="wrapper">
-
-        <!-- LEFT -->
+        <!-- left container -->
         <div class="col-left">
-
           <div class="new-collection">
             <i class="ri-plant-line"></i>
             <span>NEW COLLECTION</span>
           </div>
 
-          <h1 class="product-title">a cotton<br>weave</h1>
+          <h1 class="product-title">a cotton<br />weave</h1>
           <div class="title-divider"></div>
 
           <p class="product-desc">
@@ -78,39 +79,32 @@
           <div class="feature-icons">
             <div class="feature-item">
               <div class="feature-box"><i class="ri-leaf-line"></i></div>
-              <p>Organic<br>Cotton</p>
+              <p>Organic<br />Cotton</p>
             </div>
             <div class="feature-divider"></div>
             <div class="feature-item">
               <div class="feature-box"><i class="ri-leaf-line"></i></div>
-              <p>Soft &amp;<br>Lightweight</p>
+              <p>Soft &amp;<br />Lightweight</p>
             </div>
             <div class="feature-divider"></div>
             <div class="feature-item">
               <div class="feature-box"><i class="ri-grid-line"></i></div>
-              <p>Handmade<br>Weave</p>
+              <p>Handmade<br />Weave</p>
             </div>
           </div>
-
         </div>
 
-        <!-- CENTER -->
+        <!-- center container -->
         <div class="col-center">
-
-          <!-- Image area with vertical text -->
           <div class="image-area">
-
-            <!-- Vertical text left of image -->
             <div class="vertical-text-wrap">
               <div class="vertical-divider"></div>
               <span class="vertical-text">cotton twill scarf</span>
             </div>
 
-            <!-- Main image container — position: relative parent -->
             <div class="image-container">
               <img src="images/girl.jpg" alt="Cotton Weave" />
 
-              <!-- position: absolute children -->
               <div class="badge price-badge">$488</div>
 
               <div class="badge rating-badge">
@@ -138,14 +132,14 @@
                 <p class="b-sub">Payment</p>
               </div>
             </div>
-            <div class="bottom-item">
+            <div class="bottom-item bottom-item-left-b">
               <i class="ri-truck-line"></i>
               <div>
                 <p class="b-title">Free Shipping</p>
                 <p class="b-sub">Over $100</p>
               </div>
             </div>
-            <div class="bottom-item">
+            <div class="bottom-item bottom-item-left-b">
               <i class="ri-refresh-line"></i>
               <div>
                 <p class="b-title">Easy Returns</p>
@@ -153,10 +147,9 @@
               </div>
             </div>
           </div>
-
         </div>
 
-        <!-- RIGHT — thumbnails -->
+        <!-- right -->
         <div class="col-right">
           <div class="thumb active">
             <img src="images/girl.jpg" alt="thumb 1" />
@@ -171,9 +164,7 @@
             <img src="images/girl4.jpg" alt="thumb 4" />
           </div>
         </div>
-
       </section>
     </main>
-
   </body>
 </html>
