@@ -54,16 +54,137 @@
 
 
 // 7
-function greeterNumber (num1, num2) {
+// function greeterNumber (num1, num2) {
 
-    if(num1 > num2){
-        console.log(`${num1} is greter`)
-    }
-    else if(num2 > num1){
-        console.log(`${num2} is greeter`);
+//     if(num1 > num2){
+//         console.log(`${num1} is greter`)
+//     }
+//     else if(num2 > num1){
+//         console.log(`${num2} is greeter`);
 
-    }
+//     }
 
-}
+// }
 
-greeterNumber(22, 1)
+// greeterNumber(22, 1)
+
+
+
+
+// 8
+
+// function areaOfRectangle (lenght, width) {
+//     let area = lenght * width;
+    
+//     console.log(area);
+
+//     return area;
+// }
+
+// areaOfRectangle(10, 20);
+
+// 9
+
+// const ageCheck = (age) => {
+//     if(age < 18 ){
+//         console.log("Minor")
+//     }
+//     else if(age > 18){
+//         console.log("Adult")
+//     }
+//     else{
+//         console.log("Please correct Number")
+//     }
+
+// }
+// ageCheck(20)
+
+
+
+// 10
+
+
+// const revStr = (name) => {
+//     let rev = name;
+//     let conStr = rev.split('');
+//     let fullReverse = conStr.reverse();
+//     let final = fullReverse;
+//     console.log(...final)
+        
+// }
+
+// revStr("Hello")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// =============Intermediate Level==============
+
+// const mulExp = (num1, num2) => {
+//     let mul = num1 * num2;
+//     console.log(mul);
+
+//     return mul;
+// }
+
+// mulExp(10, 10)
+
+
+
+
+
+
+// const unliNumber = (...nums) => {
+
+//     let totalNums = 0;
+
+//     for(let i = 0; i < nums.length; i++){
+        
+//           totalNums += nums[i];  
+         
+          
+//         }
+        
+//         return totalNums
+// }
+
+// const finalAns = unliNumber(1, 2, 10);
+
+// console.log(finalAns)
+
+
+
+
+// const checkVovel = (chr) => {
+//     let count = 0;
+//     let vovWord = ["a", "e", "i", "o", "u"];
+
+//     for(let i = 0; i < chr.length; i++){
+//         if(vovWord.includes(chr[i].toLowerCase())){
+//             count++
+//         }
+
+//     }
+
+//     return count;
+// }
+
+// console.log( checkVovel("Hello world") 
+
+
+
+let x = 'Tic'
+
+x = "Toc"
+x = "Toe"
+console.log(x)
