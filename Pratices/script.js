@@ -1,59 +1,37 @@
-// "use strict"
-// ==========This==========
-// normal function me use hota hai
-// object me use hota hai this 
-// arrow function me use hota hai div 
-// eventlistner me use hota hai div 
+// // function declearation
+// function greet () {}
 
-// function greet () {
-//     console.log(this)
+
+// // function expresion
+// var exp = function () {}
+
+
+// // Imdetialy Invoked function expresion
+// (function () {
+
+// })()
+
+// const a = () => {
+
 // }
 
-// greet()
 
 
-// const obj = {
-//     nmae: "muzamil",
-//     objFun () {
-//         console.log(this.nmae)
-//     }
+
+// const student1 = {
+//   firstName: "Muzamil",
+//   lastName: "Baig",
+//   greet: function () {
+//     console.log(this.firstName + " " + this.lastName);
+//   }
 // }
 
-// obj.objFun()
 
 
-// const btn = document.getElementsByTagName("button")[0];
-
-// btn.addEventListener("click", function () {
-//     console.log(btn)
-//     console.log(this)
-// })
-
-// const king = () => {
-//     console.log(this)
+// let student2 = {
+//   firstName: "Ali",
+//   lastName: "Raza",
 // }
 
-// king()
 
-
-// Arrow function bhar vala this use karta hai aur normal function apna this bana tha hai 
-
-
-
-// "use strict"
-function hello () {
-    console.log(this)
-}
-hello()
-
-
-const obj = {
-    name: "Muzamil Bhai"
-}
-
-
-const myName = () => {
-    console.log(this)
-}
-
-myName()
+// student1.greet.call(student2)
